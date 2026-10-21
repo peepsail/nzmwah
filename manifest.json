@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "NZMwah",
-  "version": "1.1.2",
+  "version": "1.2.0",
   "description": "A little mwah between the lines.",
   "minimum_chrome_version": "111",
   "permissions": [
@@ -9,7 +9,11 @@
   ],
   "host_permissions": [
     "https://*.businessdesk.co.nz/*",
-    "https://*.nzherald.co.nz/*"
+    "https://*.nzherald.co.nz/*",
+    "https://*.thepost.co.nz/*",
+    "https://*.thepress.co.nz/*",
+    "https://*.waikatotimes.co.nz/*",
+    "https://*.piano.io/*"
   ],
   "content_scripts": [
     {
@@ -46,6 +50,18 @@
       ],
       "run_at": "document_start",
       "all_frames": false
+    },
+    {
+      "matches": [
+        "https://*.thepost.co.nz/*",
+        "https://*.thepress.co.nz/*",
+        "https://*.waikatotimes.co.nz/*"
+      ],
+      "css": [
+        "view.css"
+      ],
+      "run_at": "document_start",
+      "all_frames": false
     }
   ],
   "declarative_net_request": {
@@ -59,6 +75,11 @@
         "id": "r02",
         "enabled": true,
         "path": "rules/02.json"
+      },
+      {
+        "id": "r03",
+        "enabled": true,
+        "path": "rules/03.json"
       }
     ]
   }

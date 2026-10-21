@@ -1,0 +1,25 @@
+[
+  {
+    "id": 3,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https://([a-z0-9-]+\\.)*piano\\.io/xbuilder/experience/execute([/?]|$)",
+      "isUrlFilterCaseSensitive": false,
+      "requestDomains": [
+        "piano.io"
+      ],
+      "initiatorDomains": [
+        "thepost.co.nz",
+        "thepress.co.nz",
+        "waikatotimes.co.nz"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  }
+]
