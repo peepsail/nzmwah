@@ -1,0 +1,4 @@
+#premium-toaster,
+div[id$="article-body-ad"] {
+  display: none !important;
+}
