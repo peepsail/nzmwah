@@ -1,4 +1,0 @@
-
-:is(.v2-article, .article-shorthand, .article-bigread-v2) :is(#premium-toaster, .premium-toaster) {
-  display: none !important;
-}
