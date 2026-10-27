@@ -1,0 +1,16 @@
+/* Stuff delivers article blocks with Tailwind visibility and interaction gates. */
+#comment-drawer-root [data-nzmwah-comments-open] {
+  display: block !important;
+  pointer-events: auto !important;
+}
+
+.stuff-article-layout [data-testid="premium-wall-fade"] {
+  display: none !important;
+}
+
+.stuff-article-layout .free-body.restricted-container {
+  display: block !important;
+  pointer-events: auto !important;
+  -webkit-user-select: text !important;
+  user-select: text !important;
+}

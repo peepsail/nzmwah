@@ -1,0 +1,23 @@
+[
+  {
+    "id": 4,
+    "priority": 1,
+    "action": {
+      "type": "block"
+    },
+    "condition": {
+      "regexFilter": "^https://([a-z0-9-]+\\.)*piano\\.io/",
+      "isUrlFilterCaseSensitive": false,
+      "requestDomains": [
+        "piano.io"
+      ],
+      "initiatorDomains": [
+        "odt.co.nz"
+      ],
+      "resourceTypes": [
+        "script",
+        "xmlhttprequest"
+      ]
+    }
+  }
+]
